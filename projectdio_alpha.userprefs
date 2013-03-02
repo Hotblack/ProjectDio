@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader">
+    <Files>
+      <File FileName="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" Line="1" Column="1" />
+      <File FileName="Assets\Custom Scripts\Platformer\Setup.txt" Line="17" Column="20" />
+      <File FileName="Assets\Custom Scripts\Platformer\PlatformerAnimation.cs" Line="7" Column="27" />
+      <File FileName="Assets\Custom Scripts\Platformer\PlatformerController.cs" Line="8" Column="4" />
+      <File FileName="Assets\Custom Scripts\Platformer\PlatformerPhysics.cs" Line="1" Column="1" />
+      <File FileName="Assets\Custom Scripts\vision.js" Line="1" Column="1" />
+      <File FileName="Assets\Custom Scripts\backstab.js" Line="24" Column="3" />
+      <File FileName="Assets\Custom Scripts\yougotshot.js" Line="12" Column="36" />
+      <File FileName="Assets\Custom Scripts\enemyHealth.js" Line="23" Column="21" />
+      <File FileName="Assets\Custom Scripts\enemyAI.js" Line="17" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
