@@ -33,20 +33,20 @@ public class PlatformerAnimation : MonoBehaviour
 		if (!animatedPlayerModel)
 			return false;
 
-		if (animatedPlayerModel.animation["walk"] == null ||
-			animatedPlayerModel.animation["jump"] == null ||
+		if (animatedPlayerModel.animation["idle"] == null ||
+			animatedPlayerModel.animation["walk"] == null ||
 			animatedPlayerModel.animation["slidein"] == null ||
 			animatedPlayerModel.animation["slideout"] == null ||
 			animatedPlayerModel.animation["death"] == null ||
 			animatedPlayerModel.animation["onwall"] == null ||
-			animatedPlayerModel.animation["idle"] == null) return false;
+			animatedPlayerModel.animation["jump"] == null) return false;
 
 		return true;
 	}
 
 	void Update () 
 	{
-		PlatformerPhysics platformerPhysics = GetComponent<PlatformerPhysics>();
+		//PlatformerPhysics platformerPhysics = GetComponent<PlatformerPhysics>();
 		//recalculate walking speed
 		float walkingSpeed = Mathf.Abs(rigidbody.velocity.x)*0.075f;
 		animatedPlayerModel.animation["walk"].speed = walkingSpeed;
@@ -56,17 +56,18 @@ public class PlatformerAnimation : MonoBehaviour
 		{
 			animatedPlayerModel.animation.Play("idle");
             mIdle = true;
-			platformerPhysics.canWallJump = false;
+			//platformerPhysics.canWallJump = false;
 		}
 
         if (walkingSpeed > 0.01f && mIdle)
 		{
             mIdle = false;
 			animatedPlayerModel.animation.CrossFade("walk");
-			platformerPhysics.canWallJump = false;
+			//platformerPhysics.canWallJump = false;
 			
 			
 		}
+		
 	}
 
 	void PlayAnim(string animName)

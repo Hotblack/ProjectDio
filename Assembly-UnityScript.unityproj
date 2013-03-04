@@ -51,6 +51,8 @@
      <Compile Include="Assets\Custom Scripts\notes.js" />
      <Compile Include="Assets\Custom Scripts\vision.js" />
      <Compile Include="Assets\Custom Scripts\yougotshot.js" />
+     <Compile Include="Assets\killzone.js" />
+     <Compile Include="Assets\playerHealth.js" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Custom Scripts\Platformer\Setup.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />

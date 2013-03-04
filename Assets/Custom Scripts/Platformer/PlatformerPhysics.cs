@@ -105,6 +105,11 @@ public class PlatformerPhysics : MonoBehaviour
     //Player update
 	void FixedUpdate () 
 	{
+		if (Input.GetButtonDown("Sprint"))
+			canWallJump = true;
+		if (Input.GetButtonUp("Sprint"))
+			canWallJump = false;
+		
 		if(canWallJump)
 			UpdateWallInfo();		//Check the sides to see if we are against a wall
 		UpdateGroundInfo();			//Check below to see if we are on the ground
@@ -474,7 +479,7 @@ public class PlatformerPhysics : MonoBehaviour
 			mOnWall = true;
             SendAnimMessage("LandedOnWall");
 		}
-
+		
 		mOnWall = true;
 	}
 
