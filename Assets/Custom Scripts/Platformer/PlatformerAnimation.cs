@@ -46,6 +46,7 @@ public class PlatformerAnimation : MonoBehaviour
 
 	void Update () 
 	{
+		PlatformerPhysics platformerPhysics = GetComponent<PlatformerPhysics>();
 		//recalculate walking speed
 		float walkingSpeed = Mathf.Abs(rigidbody.velocity.x)*0.075f;
 		animatedPlayerModel.animation["walk"].speed = walkingSpeed;
@@ -55,12 +56,16 @@ public class PlatformerAnimation : MonoBehaviour
 		{
 			animatedPlayerModel.animation.Play("idle");
             mIdle = true;
+			platformerPhysics.canWallJump = false;
 		}
 
         if (walkingSpeed > 0.01f && mIdle)
 		{
             mIdle = false;
 			animatedPlayerModel.animation.CrossFade("walk");
+			platformerPhysics.canWallJump = false;
+			
+			
 		}
 	}
 
